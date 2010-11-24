@@ -16,3 +16,14 @@
   <%= radio_button_tag('settings[private_project_visibility]', 'exclude_private', @settings['private_project_visibility'] == 'exclude_private', :id => 'exclude-setting') %>
   <%= content_tag(:label, l(:text_extra_recipients_recipients_not_included_in_email), :for => 'exclude-setting') %>
 </p>
+
+<p>
+  <%= radio_button_tag('settings[private_project_visibility]', 'custom_projects', @settings['private_project_visibility'] == 'custom_projects', :id => 'custom-setting') %>
+  <%= select_tag('settings[projects]', options_from_collection_for_select(Project.all, :id, :name, (@settings['projects'].collect! {|i| i.to_i} unless @settings['projects'].nil?)), :id => 'custom-projects-setting', :multiple => true) %>
+  <%= content_tag(:label, l(:text_extra_recipients_custom_project_select), :for => 'custom-projects-setting') %>
+</p>
+
+<p>
+  <%= select_tag('settings[new_status]', options_from_collection_for_select(IssueStatus.all, :id, :name, (@settings['new_status'].collect! {|i| i.to_i} unless @settings['new_status'].nil?)), :id => 'new-status-setting', :multiple => true) %>
+  <%= content_tag(:label, l(:text_extra_recipients_new_status), :for => 'new-status-setting') %>
+</p>

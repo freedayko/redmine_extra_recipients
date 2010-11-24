@@ -5,4 +5,6 @@ ru:
   text_extra_recipients_general_settings: "Текущие email адреса будут добавлены во все события задач (новых и обновленных)"
   label_extra_recipients_project_visibility: "Личные проекты"
   text_extra_recipients_recipients_included_in_email: "Добавлять email адреса в личные проекты"
-  text_extra_recipients_recipients_not_included_in_email: "не добавлять email адреса в личные проекты"
+  text_extra_recipients_recipients_not_included_in_email: "Не добавлять email адреса в личные проекты"
+  text_extra_recipients_custom_project_select: "Добавлять email адреса только в выбраные проекты"
+  text_extra_recipients_new_status: "Добавлять email адреса только при статусе задачи"

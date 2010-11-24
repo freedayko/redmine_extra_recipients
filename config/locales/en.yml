@@ -6,3 +6,5 @@ en:
   label_extra_recipients_project_visibility: "Private projects"
   text_extra_recipients_recipients_included_in_email: "Include extra recipients in private projects"
   text_extra_recipients_recipients_not_included_in_email: "Don't include extra recipients in private projects"
+  text_extra_recipients_custom_project_select: "Include extra recipients only to selected projects"
+  text_extra_recipients_new_status: "Include extra recipients only whet this status on issue"
